@@ -1,0 +1,25 @@
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    column-gap: 40px;
+}
+
+.search__input{
+    width: 150px;
+    border-radius: 7px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+}
+.search__btns{
+    display: flex;
+    column-gap: 10px;
+}
+.search__btn{
+    width: 50px;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+}

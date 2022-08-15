@@ -1,0 +1,18 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+.todo-container{
+    max-height: 400px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    background-color: white;
+}
