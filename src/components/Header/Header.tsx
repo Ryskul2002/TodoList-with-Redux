@@ -1,16 +1,21 @@
 // External dependencies
-import React from "react";
+import React from 'react';
 
-// Local dependecies
-import "./style.css";
+// Local dependencies
+import {State} from "../../redux";
+import './style.css'
+import {useSelector} from "react-redux";
 
 const Header = () => {
-  return (
-    <header className="header">
-      <h2>Todo list</h2>
-      <p>amount your tasks</p>
-    </header>
-  );
+
+    const todo = useSelector((state:State) => state.bank?.todos)
+
+    return (
+        <div className="header">
+            <h2 className="header__title">Todo List</h2>
+            <p className="header__amount">amount your task {todo?.length} </p>
+        </div>
+    );
 };
 
 export default Header;

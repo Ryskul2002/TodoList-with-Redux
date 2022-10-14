@@ -1,12 +1,13 @@
-import { combineReducers } from 'redux'
-import { store } from '../store'
-import bankReducers from './bankReduser'
+// External dependencies
+import {combineReducers} from 'redux'
+
+// Local dependencies
+import bankReducer from "./bankReducer";
 
 const reducers = combineReducers({
-    bank : bankReducers
+    bank: bankReducer
 })
 
 export default reducers
 
 export type State = ReturnType<typeof reducers>
-export type StateDispatch = typeof store.dispatch

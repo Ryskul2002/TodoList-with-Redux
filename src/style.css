@@ -1,18 +1,22 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.App{
+.App {
+    background-color: aquamarine;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: skyblue;
 }
-.todo-container{
-    max-height: 400px;
-    border-radius: 5px;
-    padding: 20px 20px;
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.task{
     background-color: white;
+    padding: 20px;
+    border-radius: 5px;
 }

@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search__input{
+    height: 40px;
+}
+
+.search__btns{
+    display: flex;
+    column-gap: 10px;
+}
+
+.search__btn{
+    width: 55px;
+    border-radius: 7px;
+}

@@ -1,5 +1,8 @@
+// External dependencies
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+
+// Local dependencies
 import App from './App';
 
 test('renders learn react link', () => {

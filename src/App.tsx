@@ -1,23 +1,28 @@
-// External depedencies
-import 'bootswatch/dist/sketchy/bootstrap.min.css';
+// External dependencies
 import React from 'react';
+import 'bootswatch/dist/sketchy/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/fontawesome.min'
 
-// Local depedecies
-import Header from './components/Header/Header';
-import Search from './components/search/Search';
-import TodoList from './components/todoList/TodoList';
-import AddTodo from './components/addTodo/AddTodo';
+// Local dependencies
+import Header from "./components/Header/Header";
+import SearchTodo from "./components/SearchTodo/SearchTodo";
+import TodoList from "./components/TodoList/TodoList";
+import AddTodo from "./components/AddTodo/AddTodo";
 import './style.css'
 
-function App() {
+const App: React.FC = () => {
+
   return (
     <div className="App">
-          <div className='todo-container'>
-            <Header/>
-            <Search/>
-            <TodoList/>
-            <AddTodo/>
-          </div>
+        <div className="container">
+            <div className="task">
+                <Header/>
+                <SearchTodo/>
+                <TodoList/>
+                <AddTodo/>
+            </div>
+        </div>
     </div>
   );
 }

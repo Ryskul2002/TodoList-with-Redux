@@ -1,0 +1,44 @@
+.list{
+    padding-left: 0 !important;
+}
+
+.list__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.list__btn{
+    border-radius: 7px;
+    height: 40px;
+    width: 70px;
+}
+
+.list__btn.active{
+    color: red;
+}
+
+.list__title{
+    margin-bottom: 0 !important;
+    font-size: 19px;
+    position: relative;
+}
+
+.list__title.active::after{
+    content: '!';
+    top: 0;
+    right: 63px;
+    position: absolute;
+    color: crimson;
+}
+
+.list__title.active-line{
+    color: crimson;
+    text-decoration-line: line-through;
+}
+
+.list__btns{
+    display: flex;
+    column-gap: 10px;
+}

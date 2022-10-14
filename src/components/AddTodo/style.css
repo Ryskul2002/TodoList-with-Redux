@@ -1,0 +1,14 @@
+.todoList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoList__input{
+    height: 40px;
+    width: 150px;
+}
+
+.todoList__btn{
+    border-radius: 7px;
+    width: 65px;
+}
